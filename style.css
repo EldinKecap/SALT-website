@@ -1,0 +1,39 @@
+*{
+    margin:0;
+}
+.navbar {
+    margin-top: 0px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: black;
+    width: 100%;
+}
+ul {
+    color: white;
+    list-style-type: none ; 
+    margin: 0px;
+    font-family: sans-serif;
+}
+li{
+    display: inline; 
+    float: left;
+    padding: 10px;
+    padding-left: 50px;
+  
+}
+#logo {
+    padding-left: 500px;
+}
+.nav{
+    display: block;
+    margin-top: 0px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: yellow;
+    
+}
