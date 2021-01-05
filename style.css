@@ -1,39 +1,80 @@
 *{
     margin:0;
-}
-.navbar {
-    margin-top: 0px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    background-color: black;
-    width: 100%;
-}
-ul {
-    color: white;
-    list-style-type: none ; 
-    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
+    color: white;
 }
-li{
-    display: inline; 
+body {
+    background-color:white;
+}
+nav {
+   
+    background-color:black;
+    
+}
+nav:after{
+    content: '';
+    clear: both;
+    display: table;
+}
+nav ul {
+    float: right; 
+    list-style: none;
+    margin-right: 400px;
+    position: relative;
+}
+nav ul li{
+    display: inline-block; 
     float: left;
-    padding: 10px;
-    padding-left: 50px;
-  
-}
-#logo {
-    padding-left: 500px;
-}
-.nav{
-    display: block;
-    margin-top: 0px;
-}
-a{
+    background: black;
+    margin: 0px;
+} 
+
+nav ul li a{
     text-decoration: none;
     color: white;
+    line-height: 70px;
+    font-size: 18px; 
+    padding: 8px 60px; 
 }
-a:hover{
+nav ul li a:hover{
     color: yellow;
+    border-radius: 5px;
+    box-shadow: 0 0 5px yellow,
+                0 0 5px yellow;
     
+}
+nav ul ul{ 
+    border-top: 3px solid yellow;
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+} 
+nav ul li:hover > ul{
+   top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+nav ul ul li{
+    position: relative;
+    margin-left: 0px;
+    padding-left: 10px;
+    width: 195px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px rgba(0,0, 0,0.3);
+}
+nav.logo{
+    float: left;
+     padding-left: 60px;
+     margin-top: 100px;
+     display: none;
+     
+}
+#logo{
+    margin-top: 10px;
+    margin-left: 150px;
 }
